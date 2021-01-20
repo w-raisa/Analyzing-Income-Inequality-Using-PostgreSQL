@@ -1,0 +1,462 @@
+Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Username [postgres]:
+Password for user postgres:
+psql (13.0)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# drop schema if exists projectschema cascade;
+NOTICE:  drop cascades to 10 other objects
+DETAIL:  drop cascades to table projectschema.country
+drop cascades to table projectschema.gini_coefficient
+drop cascades to table projectschema.unemploymentrate
+drop cascades to table projectschema.gdppercapita
+drop cascades to table projectschema.incometaxrate
+drop cascades to table projectschema.educationattainment
+drop cascades to table projectschema.governmentspending
+drop cascades to table projectschema.governmentdebt
+drop cascades to table projectschema.homiciderate
+drop cascades to table projectschema.co2emissions
+DROP SCHEMA
+postgres=# create schema projectschema;
+CREATE SCHEMA
+postgres=# set search_path to projectschema;
+SET
+postgres=# create table Country(cID char(3) unique, cName varchar(50) primary key, population int not null);
+CREATE TABLE
+postgres=# create table Gini_Coefficient(value float not null, country varchar(50) primary key references Country(cName));
+CREATE TABLE
+postgres=# create table UnemploymentRate(value float not null, country varchar(50) references Country(cName));
+CREATE TABLE
+postgres=# create table GDPPerCapita(value float not null, country varchar(50) references Country(cName));
+CREATE TABLE
+postgres=# create table TaxRevenue(value float not null, country varchar(50) references Country(cName));
+CREATE TABLE
+postgres=# create table EducationAttainment(value float not null, country varchar(50) references Country(cName));
+CREATE TABLE
+postgres=# create table GovernmentSpending(value float not null, country varchar(50) references Country(cName));
+CREATE TABLE
+postgres=# create table GovernmentDebt(value float not null, country varchar(50) references Country(cName));
+CREATE TABLE
+postgres=# create table HomicideRate(value float not null, country varchar(50) references Country(cName));
+CREATE TABLE
+postgres=# create table CO2Emissions(value float not null, country varchar(50) references Country(cName));
+CREATE TABLE
+postgres=# \COPY Country from 'C:\Users\igorl\OneDrive\Desktop\project\Country.csv' with csv
+COPY 216
+postgres=# \COPY Gini_Coefficient from 'C:\Users\igorl\OneDrive\Desktop\project\Gini_Coefficient.csv' with csv
+COPY 83
+postgres=# \COPY UnemploymentRate from 'C:\Users\igorl\OneDrive\Desktop\project\UnemploymentRate.csv' with csv
+COPY 133
+postgres=# \COPY GDPPerCapita from 'C:\Users\igorl\OneDrive\Desktop\project\GDPPerCapita.csv' with csv
+COPY 205
+postgres=# \COPY TaxRevenue from 'C:\Users\igorl\OneDrive\Desktop\project\TaxRevenue.csv' with csv
+COPY 126
+postgres=# \COPY EducationAttainment from 'C:\Users\igorl\OneDrive\Desktop\project\EducationAttainment.csv' with csv
+COPY 70
+postgres=# \COPY GovernmentSpending from 'C:\Users\igorl\OneDrive\Desktop\project\GovernmentSpending.csv' with csv
+COPY 175
+postgres=# \COPY GovernmentDebt from 'C:\Users\igorl\OneDrive\Desktop\project\GovernmentDebt.csv' with csv
+COPY 54
+postgres=# \COPY HomicideRate from 'C:\Users\igorl\OneDrive\Desktop\project\HomicideRate.csv' with csv
+COPY 166
+postgres=# \COPY CO2Emissions from 'C:\Users\igorl\OneDrive\Desktop\project\CO2Emissions.csv' with csv
+COPY 203
+postgres=# SELECT count(*) FROM Country;
+ count
+-------
+   216
+(1 row)
+
+
+postgres=# SELECT count(*) FROM Gini_Coefficient;
+ count
+-------
+    83
+(1 row)
+
+
+postgres=# SELECT count(*) FROM UnemploymentRate;
+ count
+-------
+   133
+(1 row)
+
+
+postgres=# SELECT count(*) FROM GDPPerCapita;
+ count
+-------
+   205
+(1 row)
+
+
+postgres=# SELECT count(*) FROM TaxRevenue;
+ count
+-------
+   126
+(1 row)
+
+
+postgres=# SELECT count(*) FROM EducationAttainment;
+ count
+-------
+    70
+(1 row)
+
+
+postgres=# SELECT count(*) FROM GovernmentSpending;
+ count
+-------
+   175
+(1 row)
+
+
+postgres=# SELECT count(*) FROM GovernmentDebt;
+ count
+-------
+    54
+(1 row)
+
+
+postgres=# SELECT count(*) FROM HomicideRate;
+ count
+-------
+   166
+(1 row)
+
+
+postgres=# SELECT count(*) FROM CO2Emissions;
+ count
+-------
+   203
+(1 row)
+
+
+postgres=# SELECT * FROM Country;
+ cid |             cname              | population
+-----+--------------------------------+------------
+ AFG | Afghanistan                    |   38041754
+ ALB | Albania                        |    2854191
+ DZA | Algeria                        |   43053054
+ ASM | American Samoa                 |      55312
+ AND | Andorra                        |      77142
+ AGO | Angola                         |   31825295
+ ATG | Antigua and Barbuda            |      97118
+ ARG | Argentina                      |   44938712
+ ARM | Armenia                        |    2957731
+ ABW | Aruba                          |     106314
+ AUS | Australia                      |   25364307
+ AUT | Austria                        |    8877067
+ AZE | Azerbaijan                     |   10023318
+ BHS | Bahamas, The                   |     389482
+ BHR | Bahrain                        |    1641172
+ BGD | Bangladesh                     |  163046161
+ BRB | Barbados                       |     287025
+ BLR | Belarus                        |    9466856
+ BEL | Belgium                        |   11484055
+ BLZ | Belize                         |     390353
+ BEN | Benin                          |   11801151
+ BMU | Bermuda                        |      63918
+ BTN | Bhutan                         |     763092
+ BOL | Bolivia                        |   11513100
+ BIH | Bosnia and Herzegovina         |    3301000
+ BWA | Botswana                       |    2303697
+ BRA | Brazil                         |  211049527
+ VGB | British Virgin Islands         |      30030
+ BRN | Brunei Darussalam              |     433285
+ BGR | Bulgaria                       |    6975761
+ BFA | Burkina Faso                   |   20321378
+postgres=# SELECT * FROM Gini_Coefficient;
+ value |        country
+-------+-----------------------
+  44.5 | Argentina
+    30 | Armenia
+  34.7 | Australia
+  30.3 | Austria
+  32.1 | Bangladesh
+  28.6 | Belarus
+  28.4 | Belgium
+  35.7 | Bulgaria
+  33.6 | Canada
+  43.7 | China
+  54.7 | Colombia
+  48.2 | Costa Rica
+  32.4 | Croatia
+  31.5 | Cyprus
+  26.6 | Czech Republic
+  27.2 | Denmark
+  47.3 | Dominican Republic
+  48.7 | Ecuador
+  30.2 | Egypt, Arab Rep.
+  43.5 | El Salvador
+    32 | Estonia
+  33.2 | Ethiopia
+  27.7 | Finland
+  33.7 | France
+  43.6 | Gambia, The
+  39.5 | Georgia
+postgres=# SELECT * FROM UnemploymentRate;
+ value |         country
+-------+--------------------------
+ 14.09 | Albania
+  9.96 | Algeria
+  9.19 | American Samoa
+  9.43 | Angola
+  7.71 | Argentina
+ 19.01 | Armenia
+  10.6 | Aruba
+  5.21 | Australia
+  4.82 | Austria
+  5.63 | Azerbaijan
+  1.13 | Bahrain
+  3.38 | Bangladesh
+ 10.69 | Barbados
+  8.29 | Belgium
+  1.04 | Benin
+  6.49 | Bermuda
+  3.32 | Bhutan
+ 27.31 | Bosnia and Herzegovina
+ 17.86 | Botswana
+ 10.28 | Bulgaria
+ 10.67 | Cabo Verde
+  0.77 | Cambodia
+  4.11 | Cameroon
+  8.06 | Canada
+  6.68 | Cayman Islands
+  8.42 | Chile
+postgres=# SELECT * FROM GDPPerCapita;
+     value      |            country
+----------------+--------------------------------
+    15856574731 | Afghanistan
+    11926928506 | Albania
+   161000000000 | Algeria
+      576000000 | American Samoa
+     3449966857 | Andorra
+    83799496611 | Angola
+     1148700000 | Antigua and Barbuda
+   424000000000 | Argentina
+     9260284938 | Armenia
+     2390502793 | Aruba
+  1150000000000 | Australia
+   392000000000 | Austria
+    52902703376 | Azerbaijan
+    10095760000 | Bahamas, The
+    25713271277 | Bahrain
+   115000000000 | Bangladesh
+     4530000000 | Barbados
+    57222490769 | Belarus
+   481000000000 | Belgium
+     1377200000 | Belize
+     9535344283 | Benin
+     5744414000 | Bermuda
+     1547991318 | Bhutan
+    19649631451 | Bolivia
+    17176781337 | Bosnia and Herzegovina
+    12786654366 | Botswana
+  2210000000000 | Brazil
+    13707370737 | Brunei Darussalam
+    50363282117 | Bulgaria
+    10109618964 | Burkina Faso
+     2032135247 | Burundi
+     1664310770 | Cabo Verde
+    11242275199 | Cambodia
+    26169323293 | Cameroon
+  1610000000000 | Canada
+     4156935677 | Cayman Islands
+     2142591376 | Central African Republic
+    10668102735 | Chad
+   219000000000 | Chile
+  6090000000000 | China
+   287000000000 | Colombia
+    907978723.5 | Comoros
+    21565720044 | Congo, Dem. Rep.
+    12019594809 | Congo, Rep.
+    37268614024 | Costa Rica
+    24908781285 | Cote d'Ivoire
+    59807930156 | Croatia
+    64328000000 | Cuba
+    25732432719 | Cyprus
+   207000000000 | Czech Republic
+   322000000000 | Denmark
+     1128611700 | Djibouti
+    493825925.9 | Dominica
+    53860175556 | Dominican Republic
+postgres=# SELECT * FROM TaxRevenue;
+    value    |            country
+-------------+--------------------------------
+ 9.169751919 | Afghanistan
+ 16.59994635 | Angola
+ 12.85304269 | Argentina
+  17.0700514 | Armenia
+ 20.52695527 | Australia
+ 25.28163551 | Austria
+ 12.15777699 | Azerbaijan
+ 10.87690278 | Bahamas, The
+ 7.834684749 | Bangladesh
+  24.7129305 | Barbados
+ 16.32143837 | Belarus
+ 24.46824242 | Belgium
+  23.9378449 | Belize
+ 13.46153264 | Bhutan
+ 19.68567609 | Bosnia and Herzegovina
+ 23.60443208 | Botswana
+ 14.25610396 | Brazil
+ 18.54131226 | Bulgaria
+ 11.31006465 | Burkina Faso
+ 18.44614056 | Cabo Verde
+ 10.00304014 | Cambodia
+ 11.76044487 | Canada
+ 8.407892197 | Central African Republic
+  17.3565144 | Chile
+ 10.21204751 | China
+  12.1421652 | Colombia
+postgres=# SELECT * FROM EducationAttainment;
+    value    |        country
+-------------+------------------------
+ 51.26023865 | Argentina
+ 60.79969025 | Aruba
+ 93.19953156 | Australia
+ 95.56773376 | Azerbaijan
+ 89.13713074 | Bahamas, The
+ 54.89627075 | Bahrain
+ 79.64148712 | Belgium
+ 83.93476868 | Belize
+ 56.91952896 | Bosnia and Herzegovina
+  50.6151886 | Brazil
+ 93.21961212 | Bulgaria
+ 36.22809982 | Cameroon
+  75.0458374 | Chile
+ 65.32292175 | China
+ 44.15533829 | Colombia
+ 48.98918152 | Costa Rica
+ 75.84166718 | Cyprus
+ 99.82282257 | Czech Republic
+ 52.63024902 | Dominican Republic
+ 44.68481827 | Ecuador
+ 41.69395828 | El Salvador
+ 79.21469116 | France
+ 96.52384186 | Germany
+ 54.31961823 | Ghana
+ 63.14907837 | Greece
+ 11.68274975 | Guinea
+postgres=# SELECT * FROM GovernmentSpending;
+    value    |         country
+-------------+--------------------------
+ 14.40849844 | Afghanistan
+ 11.15735506 | Albania
+ 17.22705894 | Algeria
+ 17.04234392 | Angola
+ 15.16371789 | Argentina
+ 12.04370773 | Armenia
+ 27.15587754 | Aruba
+ 17.99900247 | Australia
+ 20.49254767 | Austria
+ 10.88143177 | Azerbaijan
+ 12.51713591 | Bahamas, The
+   12.927549 | Bahrain
+ 5.075325836 | Bangladesh
+ 15.42587307 | Barbados
+ 16.02139549 | Belarus
+ 23.73268609 | Belgium
+  16.1775196 | Belize
+ 11.21186949 | Benin
+   15.499057 | Bermuda
+ 20.46793617 | Bhutan
+ 13.83121835 | Bolivia
+ 23.12709588 | Bosnia and Herzegovina
+ 19.75650557 | Botswana
+ 19.01685784 | Brazil
+ 22.15088283 | Brunei Darussalam
+ 16.60893285 | Bulgaria
+postgres=# SELECT * FROM GovernmentDebt;
+    value    |            country
+-------------+--------------------------------
+ 0.029257361 | Australia
+ 6.385575792 | Azerbaijan
+ 33.68656743 | Bahamas, The
+ 95.72464313 | Barbados
+ 18.90524573 | Belarus
+ 81.32707668 | Belize
+ 56.21183125 | Bhutan
+ 21.63068854 | Botswana
+ 61.31878046 | Brazil
+ 72.45266993 | Colombia
+ 27.87584869 | Congo, Rep.
+ 57.49403729 | El Salvador
+ 34.98139458 | Georgia
+ 24.41978694 | Guatemala
+ 80.84554643 | Hungary
+ 102.4201546 | Iceland
+  51.5919103 | India
+ 26.16615928 | Indonesia
+  82.6024575 | Ireland
+ 136.2243349 | Jamaica
+ 162.2964066 | Japan
+ 60.52481223 | Jordan
+ 9.522963251 | Kazakhstan
+ 28.03010955 | Malawi
+ 49.55982307 | Malaysia
+ 54.88541815 | Maldives
+postgres=# SELECT * FROM HomicideRate;
+    value    |            country
+-------------+--------------------------------
+ 3.368109608 | Afghanistan
+ 4.307963049 | Albania
+ 0.705997765 | Algeria
+ 8.915198631 | American Samoa
+           0 | Andorra
+  6.81585823 | Antigua and Barbuda
+ 5.829456464 | Argentina
+ 1.946259602 | Armenia
+ 3.934490729 | Aruba
+ 1.042668759 | Australia
+ 0.689659683 | Austria
+ 2.280662034 | Azerbaijan
+ 26.48364776 | Bahamas, The
+ 0.886479098 | Bahrain
+ 2.702346806 | Bangladesh
+ 10.98780354 | Barbados
+ 4.256639934 | Belarus
+ 1.727804906 | Belgium
+ 40.00434156 | Belize
+  10.9450247 | Bermuda
+ 2.334055918 | Bhutan
+ 12.66843521 | Bolivia
+ 1.511276008 | Bosnia and Herzegovina
+ 15.24830583 | Botswana
+ 22.10985431 | Brazil
+ 0.257311506 | Brunei Darussalam
+postgres=# SELECT * FROM CO2Emissions;
+    value    |            country
+-------------+--------------------------------
+  0.28998763 | Afghanistan
+ 1.578573584 | Albania
+ 3.312560602 | Algeria
+ 6.122594702 | Andorra
+ 1.244091538 | Angola
+ 5.956979597 | Antigua and Barbuda
+ 4.606804136 | Argentina
+ 1.463068919 | Armenia
+ 24.67052887 | Aruba
+ 17.74084505 | Australia
+ 8.078585585 | Austria
+ 3.388225879 | Azerbaijan
+ 6.725653769 | Bahamas, The
+ 23.58551891 | Bahrain
+ 0.408083791 | Bangladesh
+ 5.237995825 | Barbados
+  6.64269666 | Belarus
+ 10.11963524 | Belgium
+ 1.671656371 | Belize
+ 0.553283259 | Benin
+ 9.347122413 | Bermuda
+ 0.711464428 | Bhutan
+ 1.511526891 | Bolivia
+ 5.741760834 | Bosnia and Herzegovina
+ 2.299366163 | Botswana
+ 2.144736395 | Brazil
+postgres=#

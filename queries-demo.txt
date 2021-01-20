@@ -1,0 +1,1621 @@
+Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Username [postgres]:
+Password for user postgres:
+psql (13.0)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# SET search_path TO projectschema;
+SET
+postgres=# \i 'C:/Users/igorl/OneDrive/Desktop/project/queries.sql';
+ cid |             cname              | population
+-----+--------------------------------+------------
+ AFG | Afghanistan                    |   38041754
+ ALB | Albania                        |    2854191
+ DZA | Algeria                        |   43053054
+ ASM | American Samoa                 |      55312
+ AND | Andorra                        |      77142
+ AGO | Angola                         |   31825295
+ ATG | Antigua and Barbuda            |      97118
+ ARG | Argentina                      |   44938712
+ ARM | Armenia                        |    2957731
+ ABW | Aruba                          |     106314
+ AUS | Australia                      |   25364307
+ AUT | Austria                        |    8877067
+ AZE | Azerbaijan                     |   10023318
+ BHS | Bahamas, The                   |     389482
+ BHR | Bahrain                        |    1641172
+ BGD | Bangladesh                     |  163046161
+ BRB | Barbados                       |     287025
+ BLR | Belarus                        |    9466856
+ BEL | Belgium                        |   11484055
+ BLZ | Belize                         |     390353
+ BEN | Benin                          |   11801151
+ BMU | Bermuda                        |      63918
+ BTN | Bhutan                         |     763092
+ BOL | Bolivia                        |   11513100
+ BIH | Bosnia and Herzegovina         |    3301000
+ BWA | Botswana                       |    2303697
+ BRA | Brazil                         |  211049527
+ VGB | British Virgin Islands         |      30030
+ BRN | Brunei Darussalam              |     433285
+ BGR | Bulgaria                       |    6975761
+ BFA | Burkina Faso                   |   20321378
+ BDI | Burundi                        |   11530580
+ CPV | Cabo Verde                     |     549935
+ KHM | Cambodia                       |   16486542
+ CMR | Cameroon                       |   25876380
+ CAN | Canada                         |   37589262
+ CYM | Cayman Islands                 |      64948
+ CAF | Central African Republic       |    4745185
+ TCD | Chad                           |   15946876
+ CHI | Channel Islands                |     172259
+ CHL | Chile                          |   18952038
+ CHN | China                          | 1397715000
+ COL | Colombia                       |   50339443
+ COM | Comoros                        |     850886
+ COD | Congo, Dem. Rep.               |   86790567
+ COG | Congo, Rep.                    |    5380508
+ CRI | Costa Rica                     |    5047561
+ CIV | Cote d'Ivoire                  |   25716544
+ HRV | Croatia                        |    4067500
+ CUB | Cuba                           |   11333483
+ CUW | Curacao                        |     157538
+ CYP | Cyprus                         |    1198575
+ CZE | Czech Republic                 |   10669709
+ DNK | Denmark                        |    5818553
+ DJI | Djibouti                       |     973560
+ DMA | Dominica                       |      71808
+ DOM | Dominican Republic             |   10738958
+ ECU | Ecuador                        |   17373662
+ EGY | Egypt, Arab Rep.               |  100388073
+ SLV | El Salvador                    |    6453553
+ GNQ | Equatorial Guinea              |    1355986
+ EST | Estonia                        |    1326590
+ SWZ | Eswatini                       |    1148130
+ ETH | Ethiopia                       |  112078730
+ FRO | Faroe Islands                  |      48678
+ FJI | Fiji                           |     889953
+ FIN | Finland                        |    5520314
+ FRA | France                         |   67059887
+ PYF | French Polynesia               |     279287
+ GAB | Gabon                          |    2172579
+ GMB | Gambia, The                    |    2347706
+ GEO | Georgia                        |    3720382
+ DEU | Germany                        |   83132799
+ GHA | Ghana                          |   30417856
+ GIB | Gibraltar                      |      33701
+ GRC | Greece                         |   10716322
+ GRL | Greenland                      |      56225
+ GRD | Grenada                        |     112003
+ GUM | Guam                           |     167294
+ GTM | Guatemala                      |   16604026
+ GIN | Guinea                         |   12771246
+ GNB | Guinea-Bissau                  |    1920922
+ GUY | Guyana                         |     782766
+ HTI | Haiti                          |   11263077
+ HND | Honduras                       |    9746117
+ HKG | Hong Kong SAR, China           |    7507400
+ HUN | Hungary                        |    9769949
+ ISL | Iceland                        |     361313
+ IND | India                          | 1366417754
+ IDN | Indonesia                      |  270625568
+ IRN | Iran, Islamic Rep.             |   82913906
+ IRQ | Iraq                           |   39309783
+ IRL | Ireland                        |    4941444
+ IMN | Isle of Man                    |      84584
+ ISR | Israel                         |    9053300
+ ITA | Italy                          |   60297396
+ JAM | Jamaica                        |    2948279
+ JPN | Japan                          |  126264931
+ JOR | Jordan                         |   10101694
+ KAZ | Kazakhstan                     |   18513930
+ KEN | Kenya                          |   52573973
+ KIR | Kiribati                       |     117606
+ PRK | Korea, Dem. PeopleÆs Rep.      |   25666161
+ KOR | Korea, Rep.                    |   51709098
+ XKX | Kosovo                         |    1794248
+ KWT | Kuwait                         |    4207083
+ KGZ | Kyrgyz Republic                |    6456900
+ LAO | Lao PDR                        |    7169455
+ LVA | Latvia                         |    1912789
+ LBN | Lebanon                        |    6855713
+ LSO | Lesotho                        |    2125268
+ LBR | Liberia                        |    4937374
+ LBY | Libya                          |    6777452
+ LIE | Liechtenstein                  |      38019
+ LTU | Lithuania                      |    2786844
+ LUX | Luxembourg                     |     619896
+ MAC | Macao SAR, China               |     640445
+ MDG | Madagascar                     |   26969307
+ MWI | Malawi                         |   18628747
+ MYS | Malaysia                       |   31949777
+ MDV | Maldives                       |     530953
+ MLI | Mali                           |   19658031
+ MLT | Malta                          |     502653
+ MHL | Marshall Islands               |      58791
+ MRT | Mauritania                     |    4525696
+ MUS | Mauritius                      |    1265711
+ MEX | Mexico                         |  127575529
+ FSM | Micronesia, Fed. Sts.          |     113815
+ MDA | Moldova                        |    2657637
+ MCO | Monaco                         |      38964
+ MNG | Mongolia                       |    3225167
+ MNE | Montenegro                     |     622137
+ MAR | Morocco                        |   36471769
+ MOZ | Mozambique                     |   30366036
+ MMR | Myanmar                        |   54045420
+ NAM | Namibia                        |    2494530
+ NRU | Nauru                          |      12581
+ NPL | Nepal                          |   28608710
+ NLD | Netherlands                    |   17332850
+ NCL | New Caledonia                  |     287800
+ NZL | New Zealand                    |    4917000
+ NIC | Nicaragua                      |    6545502
+ NER | Niger                          |   23310715
+ NGA | Nigeria                        |  200963599
+ MKD | North Macedonia                |    2083459
+ MNP | Northern Mariana Islands       |      57216
+ NOR | Norway                         |    5347896
+ OMN | Oman                           |    4974986
+ PAK | Pakistan                       |  216565318
+ PLW | Palau                          |      18008
+ PAN | Panama                         |    4246439
+ PNG | Papua New Guinea               |    8776109
+ PRY | Paraguay                       |    7044636
+ PER | Peru                           |   32510453
+ PHL | Philippines                    |  108116615
+ POL | Poland                         |   37970874
+ PRT | Portugal                       |   10269417
+ PRI | Puerto Rico                    |    3193694
+ QAT | Qatar                          |    2832067
+ ROU | Romania                        |   19356544
+ RUS | Russian Federation             |  144373535
+ RWA | Rwanda                         |   12626950
+ WSM | Samoa                          |     197097
+ SMR | San Marino                     |      33860
+ STP | Sao Tome and Principe          |     215056
+ SAU | Saudi Arabia                   |   34268528
+ SEN | Senegal                        |   16296364
+ SRB | Serbia                         |    6944975
+ SYC | Seychelles                     |      97625
+ SLE | Sierra Leone                   |    7813215
+ SGP | Singapore                      |    5703569
+ SXM | Sint Maarten (Dutch part)      |      40733
+ SVK | Slovak Republic                |    5454073
+ SVN | Slovenia                       |    2087946
+ SLB | Solomon Islands                |     669823
+ SOM | Somalia                        |   15442905
+ ZAF | South Africa                   |   58558270
+ SSD | South Sudan                    |   11062113
+ ESP | Spain                          |   47076781
+ LKA | Sri Lanka                      |   21803000
+ KNA | St. Kitts and Nevis            |      52823
+ LCA | St. Lucia                      |     182790
+ MAF | St. Martin (French part)       |      38002
+ VCT | St. Vincent and the Grenadines |     110589
+ SDN | Sudan                          |   42813238
+ SUR | Suriname                       |     581372
+ SWE | Sweden                         |   10285453
+ CHE | Switzerland                    |    8574832
+ SYR | Syrian Arab Republic           |   17070135
+ TJK | Tajikistan                     |    9321018
+ TZA | Tanzania                       |   58005463
+ THA | Thailand                       |   69625582
+ TLS | Timor-Leste                    |    1293119
+ TGO | Togo                           |    8082366
+ TON | Tonga                          |     104494
+ TTO | Trinidad and Tobago            |    1394973
+ TUN | Tunisia                        |   11694719
+ TUR | Turkey                         |   83429615
+ TKM | Turkmenistan                   |    5942089
+ TCA | Turks and Caicos Islands       |      38191
+ TUV | Tuvalu                         |      11646
+ UGA | Uganda                         |   44269594
+ UKR | Ukraine                        |   44385155
+ ARE | United Arab Emirates           |    9770529
+ GBR | United Kingdom                 |   66834405
+ USA | United States                  |  328239523
+ URY | Uruguay                        |    3461734
+ UZB | Uzbekistan                     |   33580650
+ VUT | Vanuatu                        |     299882
+ VEN | Venezuela, RB                  |   28515829
+ VNM | Vietnam                        |   96462106
+ VIR | Virgin Islands (U.S.)          |     106631
+ PSE | West Bank and Gaza             |    4685306
+ YEM | Yemen, Rep.                    |   29161922
+ ZMB | Zambia                         |   17861030
+ ZWE | Zimbabwe                       |   14645468
+(216 rows)
+
+
+ value |        country
+-------+-----------------------
+  44.5 | Argentina
+    30 | Armenia
+  34.7 | Australia
+  30.3 | Austria
+  32.1 | Bangladesh
+  28.6 | Belarus
+  28.4 | Belgium
+  35.7 | Bulgaria
+  33.6 | Canada
+  43.7 | China
+  54.7 | Colombia
+  48.2 | Costa Rica
+  32.4 | Croatia
+  31.5 | Cyprus
+  26.6 | Czech Republic
+  27.2 | Denmark
+  47.3 | Dominican Republic
+  48.7 | Ecuador
+  30.2 | Egypt, Arab Rep.
+  43.5 | El Salvador
+    32 | Estonia
+  33.2 | Ethiopia
+  27.7 | Finland
+  33.7 | France
+  43.6 | Gambia, The
+  39.5 | Georgia
+  30.2 | Germany
+  34.1 | Greece
+  50.7 | Guinea-Bissau
+  53.1 | Honduras
+  29.4 | Hungary
+  26.2 | Iceland
+  36.4 | Indonesia
+  32.3 | Ireland
+  42.5 | Israel
+  34.7 | Italy
+  32.1 | Japan
+  33.7 | Jordan
+    28 | Kazakhstan
+    32 | Korea, Rep.
+  33.3 | Kosovo
+  30.1 | Kyrgyz Republic
+    35 | Latvia
+  33.6 | Lithuania
+  30.5 | Luxembourg
+  42.4 | Madagascar
+  45.5 | Malawi
+    29 | Malta
+  47.2 | Mexico
+  32.1 | Moldova
+  33.1 | Mongolia
+  32.8 | Nepal
+  27.8 | Netherlands
+  40.2 | North Macedonia
+  25.7 | Norway
+  29.8 | Pakistan
+  51.6 | Panama
+    51 | Paraguay
+  45.5 | Peru
+  33.2 | Poland
+  35.8 | Portugal
+  35.5 | Romania
+  39.5 | Russian Federation
+  47.2 | Rwanda
+  30.8 | Sao Tome and Principe
+  27.3 | Slovak Republic
+  24.9 | Slovenia
+  63.4 | South Africa
+  35.2 | Spain
+  27.7 | Sweden
+  32.6 | Switzerland
+  39.4 | Thailand
+  35.8 | Tunisia
+  38.8 | Turkey
+  39.1 | Tuvalu
+  24.8 | Ukraine
+  34.4 | United Kingdom
+    40 | United States
+  44.5 | Uruguay
+  37.6 | Vanuatu
+  39.3 | Vietnam
+  35.3 | West Bank and Gaza
+  55.6 | Zambia
+(83 rows)
+
+
+ value |         country
+-------+--------------------------
+ 14.09 | Albania
+  9.96 | Algeria
+  9.19 | American Samoa
+  9.43 | Angola
+  7.71 | Argentina
+ 19.01 | Armenia
+  10.6 | Aruba
+  5.21 | Australia
+  4.82 | Austria
+  5.63 | Azerbaijan
+  1.13 | Bahrain
+  3.38 | Bangladesh
+ 10.69 | Barbados
+  8.29 | Belgium
+  1.04 | Benin
+  6.49 | Bermuda
+  3.32 | Bhutan
+ 27.31 | Bosnia and Herzegovina
+ 17.86 | Botswana
+ 10.28 | Bulgaria
+ 10.67 | Cabo Verde
+  0.77 | Cambodia
+  4.11 | Cameroon
+  8.06 | Canada
+  6.68 | Cayman Islands
+  8.42 | Chile
+   4.1 | China
+ 10.98 | Colombia
+  7.17 | Costa Rica
+ 11.62 | Croatia
+   2.5 | Cuba
+  6.26 | Cyprus
+  7.28 | Czech Republic
+  7.75 | Denmark
+  5.21 | Dominican Republic
+  4.09 | Ecuador
+  8.76 | Egypt, Arab Rep.
+  4.89 | El Salvador
+ 16.71 | Estonia
+  8.91 | Fiji
+  8.39 | Finland
+  8.87 | France
+ 20.39 | Gabon
+  20.2 | Georgia
+  6.97 | Germany
+  5.32 | Ghana
+ 12.71 | Greece
+   7.8 | Greenland
+   8.2 | Guam
+   3.5 | Guatemala
+  4.12 | Honduras
+  4.31 | Hong Kong SAR, China
+ 11.17 | Hungary
+  7.56 | Iceland
+  2.44 | India
+  5.61 | Indonesia
+ 13.52 | Iran, Islamic Rep.
+ 14.53 | Ireland
+  8.48 | Israel
+  8.36 | Italy
+ 12.37 | Jamaica
+   5.1 | Japan
+  12.5 | Jordan
+  5.77 | Kazakhstan
+ 30.58 | Kiribati
+   3.7 | Korea, Rep.
+  1.82 | Kuwait
+  8.64 | Kyrgyz Republic
+  0.71 | Lao PDR
+ 19.48 | Latvia
+  2.27 | Liberia
+ 17.81 | Lithuania
+  4.36 | Luxembourg
+  2.84 | Macao SAR, China
+  4.28 | Madagascar
+  3.39 | Malaysia
+  8.07 | Mali
+  6.85 | Malta
+  7.65 | Mauritius
+   5.3 | Mexico
+  7.45 | Moldova
+  6.55 | Mongolia
+ 19.65 | Montenegro
+  9.09 | Morocco
+  22.1 | Namibia
+  4.99 | Netherlands
+  6.56 | New Zealand
+  7.83 | Nicaragua
+ 32.02 | North Macedonia
+ 11.17 | Northern Mariana Islands
+  3.52 | Norway
+  0.65 | Pakistan
+  3.71 | Panama
+     2 | Papua New Guinea
+  4.57 | Paraguay
+   3.3 | Peru
+  3.61 | Philippines
+  9.64 | Poland
+ 10.77 | Portugal
+  16.1 | Puerto Rico
+  0.45 | Qatar
+  6.96 | Romania
+  7.37 | Russian Federation
+  4.37 | San Marino
+  5.55 | Saudi Arabia
+ 19.22 | Serbia
+  4.12 | Singapore
+ 14.38 | Slovak Republic
+  7.24 | Slovenia
+ 24.68 | South Africa
+ 19.86 | Spain
+  4.78 | Sri Lanka
+  7.15 | Suriname
+  8.61 | Sweden
+   4.8 | Switzerland
+  8.61 | Syrian Arab Republic
+  0.62 | Thailand
+   3.3 | Timor-Leste
+  4.03 | Trinidad and Tobago
+ 13.05 | Tunisia
+ 10.66 | Turkey
+     4 | Turkmenistan
+   8.1 | Ukraine
+  7.79 | United Kingdom
+  9.63 | United States
+  7.16 | Uruguay
+   5.4 | Uzbekistan
+  1.85 | Vanuatu
+  7.11 | Venezuela, RB
+  1.11 | Vietnam
+ 21.42 | West Bank and Gaza
+ 17.82 | Yemen, Rep.
+ 13.19 | Zambia
+(133 rows)
+
+
+     value      |            country
+----------------+--------------------------------
+    15856574731 | Afghanistan
+    11926928506 | Albania
+   161000000000 | Algeria
+      576000000 | American Samoa
+     3449966857 | Andorra
+    83799496611 | Angola
+     1148700000 | Antigua and Barbuda
+   424000000000 | Argentina
+     9260284938 | Armenia
+     2390502793 | Aruba
+  1150000000000 | Australia
+   392000000000 | Austria
+    52902703376 | Azerbaijan
+    10095760000 | Bahamas, The
+    25713271277 | Bahrain
+   115000000000 | Bangladesh
+     4530000000 | Barbados
+    57222490769 | Belarus
+   481000000000 | Belgium
+     1377200000 | Belize
+     9535344283 | Benin
+     5744414000 | Bermuda
+     1547991318 | Bhutan
+    19649631451 | Bolivia
+    17176781337 | Bosnia and Herzegovina
+    12786654366 | Botswana
+  2210000000000 | Brazil
+    13707370737 | Brunei Darussalam
+    50363282117 | Bulgaria
+    10109618964 | Burkina Faso
+     2032135247 | Burundi
+     1664310770 | Cabo Verde
+    11242275199 | Cambodia
+    26169323293 | Cameroon
+  1610000000000 | Canada
+     4156935677 | Cayman Islands
+     2142591376 | Central African Republic
+    10668102735 | Chad
+   219000000000 | Chile
+  6090000000000 | China
+   287000000000 | Colombia
+    907978723.5 | Comoros
+    21565720044 | Congo, Dem. Rep.
+    12019594809 | Congo, Rep.
+    37268614024 | Costa Rica
+    24908781285 | Cote d'Ivoire
+    59807930156 | Croatia
+    64328000000 | Cuba
+    25732432719 | Cyprus
+   207000000000 | Czech Republic
+   322000000000 | Denmark
+     1128611700 | Djibouti
+    493825925.9 | Dominica
+    53860175556 | Dominican Republic
+    69555367000 | Ecuador
+   219000000000 | Egypt, Arab Rep.
+    18448000000 | El Salvador
+    16314442183 | Equatorial Guinea
+    19693608687 | Estonia
+     4438778547 | Eswatini
+    29933790334 | Ethiopia
+     2320424601 | Faroe Islands
+     3140508836 | Fiji
+   249000000000 | Finland
+  2640000000000 | France
+    14372591916 | Gabon
+     1543292393 | Gambia, The
+    12243505583 | Georgia
+  3400000000000 | Germany
+    32197272797 | Ghana
+   299000000000 | Greece
+     2503156061 | Greenland
+    771013259.3 | Grenada
+     4895000000 | Guam
+    41338008613 | Guatemala
+     6853467858 | Guinea
+    849050127.5 | Guinea-Bissau
+     2273225042 | Guyana
+     6622541529 | Haiti
+    15839344592 | Honduras
+   229000000000 | Hong Kong SAR, China
+   131000000000 | Hungary
+    13683689690 | Iceland
+  1680000000000 | India
+   755000000000 | Indonesia
+   487000000000 | Iran, Islamic Rep.
+   139000000000 | Iraq
+   222000000000 | Ireland
+     5920177689 | Isle of Man
+   234000000000 | Israel
+  2130000000000 | Italy
+    13220556883 | Jamaica
+  5700000000000 | Japan
+    26795901408 | Jordan
+   148000000000 | Kazakhstan
+    40000088347 | Kenya
+    156120895.2 | Kiribati
+  1140000000000 | Korea, Rep.
+     5835874321 | Kosovo
+   115000000000 | Kuwait
+     4794357795 | Kyrgyz Republic
+     7127792630 | Lao PDR
+    23803906231 | Latvia
+    38443907042 | Lebanon
+     2269525782 | Lesotho
+     1998000000 | Liberia
+    74773444901 | Libya
+     5082366478 | Liechtenstein
+    37034461707 | Lithuania
+    53212476812 | Luxembourg
+    28123640999 | Macao SAR, China
+     9982711030 | Madagascar
+     6959655571 | Malawi
+   255000000000 | Malaysia
+     2588176055 | Maldives
+    10689167195 | Mali
+     8749171417 | Malta
+      162164700 | Marshall Islands
+     5628882266 | Mauritania
+    10003670690 | Mauritius
+  1060000000000 | Mexico
+      296944100 | Micronesia, Fed. Sts.
+     6974960345 | Moldova
+     5367625613 | Monaco
+     7189481824 | Mongolia
+     4139192053 | Montenegro
+    93216746662 | Morocco
+    11087646868 | Mozambique
+    49540813342 | Myanmar
+    11268186636 | Namibia
+    47564520.39 | Nauru
+    16002656434 | Nepal
+   847000000000 | Netherlands
+   147000000000 | New Zealand
+     8758639096 | Nicaragua
+     7792421016 | Niger
+   363000000000 | Nigeria
+     9407168702 | North Macedonia
+      799000000 | Northern Mariana Islands
+   429000000000 | Norway
+    57048114434 | Oman
+   177000000000 | Pakistan
+      183498800 | Palau
+    29440300000 | Panama
+    14250755231 | Papua New Guinea
+    27215968616 | Paraguay
+   148000000000 | Peru
+   208000000000 | Philippines
+   479000000000 | Poland
+   238000000000 | Portugal
+    98381300000 | Puerto Rico
+   125000000000 | Qatar
+   166000000000 | Romania
+  1520000000000 | Russian Federation
+     6147525367 | Rwanda
+    663161517.9 | Samoa
+     1881214371 | San Marino
+    197454066.8 | Sao Tome and Principe
+   528000000000 | Saudi Arabia
+    16230887978 | Senegal
+    41819468692 | Serbia
+    969936525.3 | Seychelles
+     2578026297 | Sierra Leone
+   240000000000 | Singapore
+    90183986822 | Slovak Republic
+    48161250935 | Slovenia
+    681151193.5 | Solomon Islands
+   375000000000 | South Africa
+    14602072411 | South Sudan
+  1420000000000 | Spain
+    56725749222 | Sri Lanka
+    760177777.8 | St. Kitts and Nevis
+     1486758037 | St. Lucia
+    681225925.9 | St. Vincent and the Grenadines
+    61739815527 | Sudan
+     4368398048 | Suriname
+   496000000000 | Sweden
+   584000000000 | Switzerland
+     5642178580 | Tajikistan
+    32014249841 | Tanzania
+   341000000000 | Thailand
+    881825544.2 | Timor-Leste
+     3429461495 | Togo
+    369485198.8 | Tonga
+    22157948396 | Trinidad and Tobago
+    44050929160 | Tunisia
+   772000000000 | Turkey
+    22583157895 | Turkmenistan
+      686787810 | Turks and Caicos Islands
+    31823518.62 | Tuvalu
+    26457287918 | Uganda
+   136000000000 | Ukraine
+   290000000000 | United Arab Emirates
+  2480000000000 | United Kingdom
+ 15000000000000 | United States
+    40284481652 | Uruguay
+    46679875794 | Uzbekistan
+    700804286.2 | Vanuatu
+   393000000000 | Venezuela, RB
+   116000000000 | Vietnam
+     4339000000 | Virgin Islands (U.S.)
+     8913100000 | West Bank and Gaza
+    30906749533 | Yemen, Rep.
+    20265559484 | Zambia
+    12041655200 | Zimbabwe
+(205 rows)
+
+
+    value    |            country
+-------------+--------------------------------
+ 9.169751919 | Afghanistan
+ 16.59994635 | Angola
+ 12.85304269 | Argentina
+  17.0700514 | Armenia
+ 20.52695527 | Australia
+ 25.28163551 | Austria
+ 12.15777699 | Azerbaijan
+ 10.87690278 | Bahamas, The
+ 7.834684749 | Bangladesh
+  24.7129305 | Barbados
+ 16.32143837 | Belarus
+ 24.46824242 | Belgium
+  23.9378449 | Belize
+ 13.46153264 | Bhutan
+ 19.68567609 | Bosnia and Herzegovina
+ 23.60443208 | Botswana
+ 14.25610396 | Brazil
+ 18.54131226 | Bulgaria
+ 11.31006465 | Burkina Faso
+ 18.44614056 | Cabo Verde
+ 10.00304014 | Cambodia
+ 11.76044487 | Canada
+ 8.407892197 | Central African Republic
+  17.3565144 | Chile
+ 10.21204751 | China
+  12.1421652 | Colombia
+ 7.551216727 | Congo, Rep.
+ 13.08808511 | Costa Rica
+ 14.32551466 | Cote d'Ivoire
+ 19.77153766 | Croatia
+  23.1149202 | Cyprus
+ 13.44956068 | Czech Republic
+ 32.73723667 | Denmark
+ 12.20740113 | Dominican Republic
+ 14.13007625 | Egypt, Arab Rep.
+ 15.81201214 | El Salvador
+ 7.586159224 | Equatorial Guinea
+ 19.66441516 | Estonia
+  8.16344108 | Ethiopia
+ 21.77904686 | Fiji
+ 18.60127669 | Finland
+ 22.08943166 | France
+ 21.04520292 | Georgia
+ 11.19029793 | Germany
+  13.3883874 | Ghana
+ 20.21400144 | Greece
+ 10.43529828 | Guatemala
+  14.4250984 | Honduras
+ 22.84242749 | Hungary
+ 20.09303402 | Iceland
+ 10.38803979 | India
+ 10.53748506 | Indonesia
+ 21.79544457 | Ireland
+ 22.49699253 | Israel
+ 23.68062299 | Italy
+ 24.27817173 | Jamaica
+ 8.809784435 | Japan
+ 15.69453811 | Jordan
+ 15.71238046 | Kazakhstan
+ 13.43693029 | Korea, Rep.
+  0.97946746 | Kuwait
+ 19.79002424 | Latvia
+ 16.84447668 | Lebanon
+ 29.83455131 | Lesotho
+  11.2051496 | Liberia
+ 16.00980753 | Lithuania
+ 25.01213107 | Luxembourg
+ 34.53298726 | Macao SAR, China
+ 8.535319381 | Madagascar
+  15.3729139 | Malawi
+ 13.33219531 | Malaysia
+ 12.89285053 | Mali
+ 26.13967725 | Malta
+ 17.60555966 | Marshall Islands
+ 18.01671337 | Mauritius
+ 10.11091331 | Mexico
+ 4.661135884 | Micronesia, Fed. Sts.
+ 15.16064079 | Moldova
+ 19.59311925 | Mongolia
+ 22.81923338 | Morocco
+ 14.76616278 | Mozambique
+ 25.91213351 | Namibia
+ 13.39611544 | Nepal
+ 20.98619027 | Netherlands
+ 26.13417829 | New Zealand
+ 13.67834036 | Nicaragua
+  16.8656928 | North Macedonia
+ 26.88692442 | Norway
+ 16.95955832 | Palau
+ 8.878323961 | Paraguay
+ 15.46657176 | Peru
+ 11.63527559 | Philippines
+ 16.49528333 | Poland
+ 19.64280941 | Portugal
+ 16.61503047 | Romania
+ 13.04834885 | Russian Federation
+ 15.59202295 | San Marino
+ 2.529613379 | Saudi Arabia
+ 20.22926705 | Serbia
+ 27.85138935 | Seychelles
+ 12.78582397 | Singapore
+ 15.15164474 | Slovak Republic
+ 18.05730217 | Slovenia
+ 25.04150129 | South Africa
+ 12.40867747 | Spain
+ 11.30003056 | Sri Lanka
+ 16.70961051 | St. Kitts and Nevis
+ 18.16079874 | St. Lucia
+ 22.91477087 | St. Vincent and the Grenadines
+ 6.240016932 | Sudan
+ 27.39951886 | Sweden
+ 9.719225458 | Switzerland
+ 9.912261583 | Tanzania
+ 14.93264755 | Thailand
+ 110.1830522 | Timor-Leste
+ 14.54282208 | Togo
+ 26.24401846 | Trinidad and Tobago
+ 20.13908603 | Tunisia
+ 18.98339912 | Turkey
+ 15.57052141 | Ukraine
+ 25.30439901 | United Kingdom
+ 8.595732842 | United States
+ 18.88638874 | Uruguay
+  15.4991754 | Vanuatu
+ 12.83484241 | Zambia
+ 17.43492371 | Zimbabwe
+(126 rows)
+
+
+    value    |        country
+-------------+------------------------
+ 51.26023865 | Argentina
+ 60.79969025 | Aruba
+ 93.19953156 | Australia
+ 95.56773376 | Azerbaijan
+ 89.13713074 | Bahamas, The
+ 54.89627075 | Bahrain
+ 79.64148712 | Belgium
+ 83.93476868 | Belize
+ 56.91952896 | Bosnia and Herzegovina
+  50.6151886 | Brazil
+ 93.21961212 | Bulgaria
+ 36.22809982 | Cameroon
+  75.0458374 | Chile
+ 65.32292175 | China
+ 44.15533829 | Colombia
+ 48.98918152 | Costa Rica
+ 75.84166718 | Cyprus
+ 99.82282257 | Czech Republic
+ 52.63024902 | Dominican Republic
+ 44.68481827 | Ecuador
+ 41.69395828 | El Salvador
+ 79.21469116 | France
+ 96.52384186 | Germany
+ 54.31961823 | Ghana
+ 63.14907837 | Greece
+ 11.68274975 | Guinea
+ 73.96286774 | Hong Kong SAR, China
+ 97.93047333 | Hungary
+ 62.48841858 | Iran, Islamic Rep.
+ 81.06819916 | Ireland
+ 85.11004639 | Israel
+  73.8259964 | Italy
+ 74.11122131 | Jordan
+ 29.07374954 | Kenya
+ 82.90116882 | Korea, Rep.
+ 99.11830139 | Latvia
+ 90.95951843 | Lithuania
+ 68.21572113 | Malaysia
+ 68.13394165 | Malta
+ 53.08692169 | Mexico
+ 93.78920746 | Moldova
+ 84.71324158 | Mongolia
+ 89.52279663 | Netherlands
+ 99.70407867 | Norway
+ 52.31838989 | Oman
+ 33.38510132 | Pakistan
+  61.4902916 | Panama
+ 59.17739868 | Peru
+ 66.78218842 | Philippines
+ 80.90155029 | Poland
+ 41.30255127 | Portugal
+ 46.81409073 | Qatar
+  87.2773819 | Romania
+ 93.84792328 | Russian Federation
+ 85.63169098 | Serbia
+ 76.19834137 | Singapore
+  95.4296875 | Slovenia
+ 72.24150848 | South Africa
+ 67.38954926 | Spain
+ 46.69351959 | St. Lucia
+ 87.07034302 | Sweden
+ 95.79167175 | Switzerland
+ 38.65016937 | Thailand
+ 39.33469009 | Tunisia
+ 46.58588028 | Turkey
+ 28.83011055 | Uganda
+ 99.80786896 | United Kingdom
+ 94.76950073 | United States
+ 49.49821091 | Uruguay
+  52.6599617 | West Bank and Gaza
+(70 rows)
+
+
+    value    |         country
+-------------+--------------------------
+ 14.40849844 | Afghanistan
+ 11.15735506 | Albania
+ 17.22705894 | Algeria
+ 17.04234392 | Angola
+ 15.16371789 | Argentina
+ 12.04370773 | Armenia
+ 27.15587754 | Aruba
+ 17.99900247 | Australia
+ 20.49254767 | Austria
+ 10.88143177 | Azerbaijan
+ 12.51713591 | Bahamas, The
+   12.927549 | Bahrain
+ 5.075325836 | Bangladesh
+ 15.42587307 | Barbados
+ 16.02139549 | Belarus
+ 23.73268609 | Belgium
+  16.1775196 | Belize
+ 11.21186949 | Benin
+   15.499057 | Bermuda
+ 20.46793617 | Bhutan
+ 13.83121835 | Bolivia
+ 23.12709588 | Bosnia and Herzegovina
+ 19.75650557 | Botswana
+ 19.01685784 | Brazil
+ 22.15088283 | Brunei Darussalam
+ 16.60893285 | Bulgaria
+ 14.45752802 | Burkina Faso
+ 21.90000028 | Burundi
+ 18.42871582 | Cabo Verde
+ 6.344682164 | Cambodia
+ 11.38964162 | Cameroon
+ 21.52604097 | Canada
+   7.6361827 | Central African Republic
+ 6.735291521 | Chad
+ 12.10874085 | Chile
+ 14.58701901 | China
+ 13.76024703 | Colombia
+ 11.13884379 | Comoros
+ 7.295109631 | Congo, Dem. Rep.
+ 10.44015976 | Congo, Rep.
+ 16.75916331 | Costa Rica
+ 12.17758809 | Cote d'Ivoire
+ 20.50701895 | Croatia
+ 34.75935829 | Cuba
+ 16.19185328 | Curacao
+ 18.51985994 | Cyprus
+ 20.82827756 | Czech Republic
+ 27.36584798 | Denmark
+ 9.927111366 | Dominican Republic
+ 13.19965288 | Ecuador
+  11.1636002 | Egypt, Arab Rep.
+ 15.71151344 | El Salvador
+ 11.68623339 | Equatorial Guinea
+  20.0661997 | Estonia
+ 20.89880337 | Eswatini
+ 32.93947266 | Faroe Islands
+ 23.68623866 | Finland
+ 23.98925669 | France
+ 13.48694438 | Gabon
+ 10.13862681 | Gambia, The
+ 15.27110753 | Georgia
+ 19.56321167 | Germany
+ 7.069499421 | Ghana
+ 22.20415793 | Greece
+ 46.81488848 | Greenland
+ 10.47586427 | Guatemala
+  12.5681988 | Guinea
+ 9.200918873 | Guinea-Bissau
+ 15.02084638 | Guyana
+ 7.642898349 | Haiti
+ 17.92643157 | Honduras
+ 8.859323595 | Hong Kong SAR, China
+ 21.57007944 | Hungary
+    24.68375 | Iceland
+ 11.00760787 | India
+ 9.005914993 | Indonesia
+ 10.80454017 | Iran, Islamic Rep.
+ 18.91884503 | Iraq
+ 18.78842704 | Ireland
+ 22.71637979 | Israel
+ 20.55298417 | Italy
+ 16.12006097 | Jamaica
+ 19.49160384 | Japan
+ 17.04380899 | Jordan
+ 10.81234472 | Kazakhstan
+ 14.16902915 | Kenya
+ 61.32324342 | Kiribati
+ 14.20483208 | Korea, Rep.
+  16.4084507 | Kosovo
+ 17.13040219 | Kuwait
+ 18.12707124 | Kyrgyz Republic
+ 11.89822412 | Lao PDR
+ 18.43057484 | Latvia
+ 12.21987078 | Lebanon
+ 40.83321887 | Lesotho
+ 14.23686687 | Liberia
+  19.9007254 | Lithuania
+ 17.03529799 | Luxembourg
+  8.18214538 | Macao SAR, China
+ 13.11607497 | Madagascar
+ 14.23141047 | Malawi
+ 12.58116903 | Malaysia
+ 15.68764548 | Mali
+ 19.49238579 | Malta
+ 55.21725752 | Marshall Islands
+ 13.52009151 | Mauritania
+ 13.81848765 | Mauritius
+ 11.77136331 | Mexico
+ 18.21365556 | Moldova
+  12.6881257 | Mongolia
+ 22.09341171 | Montenegro
+ 17.94783234 | Morocco
+ 17.95566181 | Mozambique
+ 10.81633212 | Myanmar
+  25.5540967 | Namibia
+ 9.992588705 | Nepal
+ 26.24333724 | Netherlands
+ 19.68763975 | New Zealand
+  14.0976087 | Nicaragua
+ 15.46991166 | Niger
+ 8.848100208 | Nigeria
+ 18.29058578 | North Macedonia
+ 21.34020766 | Norway
+ 18.65511739 | Oman
+ 10.31622663 | Pakistan
+ 37.46493165 | Palau
+ 12.61230354 | Panama
+ 8.800705582 | Paraguay
+ 10.52583592 | Peru
+ 9.720395177 | Philippines
+  19.1196556 | Poland
+ 20.59315438 | Portugal
+ 11.02028536 | Puerto Rico
+ 13.98389986 | Qatar
+ 15.47522277 | Romania
+ 18.72505542 | Russian Federation
+ 13.37305834 | Rwanda
+ 20.20281753 | Saudi Arabia
+ 13.53740044 | Senegal
+ 19.13874605 | Serbia
+ 27.28748398 | Seychelles
+ 10.39971474 | Sierra Leone
+ 9.691568386 | Singapore
+ 19.24471815 | Slovak Republic
+ 20.41953635 | Slovenia
+ 20.22963791 | South Africa
+ 16.30344832 | South Sudan
+ 20.63290231 | Spain
+ 8.455846067 | Sri Lanka
+  7.47025279 | Sudan
+ 13.32443926 | Suriname
+ 25.03236949 | Sweden
+ 11.60209816 | Switzerland
+ 11.32670366 | Tajikistan
+  10.3622039 | Tanzania
+ 15.80081503 | Thailand
+ 103.1731683 | Timor-Leste
+ 13.36283457 | Togo
+ 18.04553108 | Tonga
+  16.6170535 | Tunisia
+ 14.97265828 | Turkey
+ 7.128429819 | Turkmenistan
+ 8.337712364 | Uganda
+ 19.38803683 | Ukraine
+ 10.03107177 | United Arab Emirates
+    21.65854 | United Kingdom
+  16.7431575 | United States
+ 12.64589599 | Uruguay
+  13.3319455 | Uzbekistan
+ 18.89062316 | Vanuatu
+ 11.20953884 | Venezuela, RB
+ 5.992738995 | Vietnam
+ 28.05757817 | West Bank and Gaza
+  9.37963703 | Zambia
+ 15.31562372 | Zimbabwe
+(175 rows)
+
+
+    value    |            country
+-------------+--------------------------------
+ 0.029257361 | Australia
+ 6.385575792 | Azerbaijan
+ 33.68656743 | Bahamas, The
+ 95.72464313 | Barbados
+ 18.90524573 | Belarus
+ 81.32707668 | Belize
+ 56.21183125 | Bhutan
+ 21.63068854 | Botswana
+ 61.31878046 | Brazil
+ 72.45266993 | Colombia
+ 27.87584869 | Congo, Rep.
+ 57.49403729 | El Salvador
+ 34.98139458 | Georgia
+ 24.41978694 | Guatemala
+ 80.84554643 | Hungary
+ 102.4201546 | Iceland
+  51.5919103 | India
+ 26.16615928 | Indonesia
+  82.6024575 | Ireland
+ 136.2243349 | Jamaica
+ 162.2964066 | Japan
+ 60.52481223 | Jordan
+ 9.522963251 | Kazakhstan
+ 28.03010955 | Malawi
+ 49.55982307 | Malaysia
+ 54.88541815 | Maldives
+ 64.92829512 | Marshall Islands
+ 36.78737616 | Mauritius
+ 24.15488134 | Micronesia, Fed. Sts.
+ 21.93256136 | Moldova
+ 50.96249924 | Morocco
+ 16.94497173 | Namibia
+ 33.86252123 | Nepal
+ 34.89036824 | New Zealand
+ 33.18775491 | Palau
+ 23.68179134 | Peru
+ 50.19624148 | Philippines
+ 9.098105645 | Russian Federation
+ 54.97249266 | San Marino
+ 75.35341586 | Seychelles
+ 101.4497824 | Singapore
+ 54.02453755 | Spain
+ 71.58531844 | Sri Lanka
+ 107.4358824 | St. Kitts and Nevis
+ 45.72215255 | St. Lucia
+ 59.89474314 | St. Vincent and the Grenadines
+ 21.56106074 | Switzerland
+ 26.90084554 | Thailand
+  40.6626014 | Tunisia
+ 47.43244567 | Turkey
+ 29.96955564 | Ukraine
+ 81.69635695 | United Kingdom
+ 85.46427386 | United States
+ 44.22270175 | Uruguay
+(54 rows)
+
+
+    value    |            country
+-------------+--------------------------------
+ 3.368109608 | Afghanistan
+ 4.307963049 | Albania
+ 0.705997765 | Algeria
+ 8.915198631 | American Samoa
+           0 | Andorra
+  6.81585823 | Antigua and Barbuda
+ 5.829456464 | Argentina
+ 1.946259602 | Armenia
+ 3.934490729 | Aruba
+ 1.042668759 | Australia
+ 0.689659683 | Austria
+ 2.280662034 | Azerbaijan
+ 26.48364776 | Bahamas, The
+ 0.886479098 | Bahrain
+ 2.702346806 | Bangladesh
+ 10.98780354 | Barbados
+ 4.256639934 | Belarus
+ 1.727804906 | Belgium
+ 40.00434156 | Belize
+  10.9450247 | Bermuda
+ 2.334055918 | Bhutan
+ 12.66843521 | Bolivia
+ 1.511276008 | Bosnia and Herzegovina
+ 15.24830583 | Botswana
+ 22.10985431 | Brazil
+ 0.257311506 | Brunei Darussalam
+  1.99326304 | Bulgaria
+  0.78819825 | Burkina Faso
+ 3.999720596 | Burundi
+ 7.916467063 | Cabo Verde
+ 2.312711424 | Cambodia
+ 4.911205986 | Cameroon
+ 1.628227324 | Canada
+ 15.88085827 | Cayman Islands
+           0 | Channel Islands
+  3.17069021 | Chile
+  0.97968265 | China
+ 34.18416048 | Colombia
+ 11.51315897 | Costa Rica
+ 1.432478398 | Croatia
+  4.49855258 | Cuba
+ 0.719025505 | Cyprus
+ 0.977552917 | Czech Republic
+  0.75609616 | Denmark
+ 21.16342396 | Dominica
+ 25.51800045 | Dominican Republic
+ 17.47371981 | Ecuador
+ 2.222054565 | Egypt, Arab Rep.
+ 64.47411551 | El Salvador
+ 5.254848912 | Estonia
+ 19.53343269 | Eswatini
+ 2.326079068 | Fiji
+ 2.217756063 | Finland
+ 1.265912669 | France
+ 4.561981471 | Georgia
+ 0.981107786 | Germany
+ 1.703012807 | Ghana
+ 2.977519726 | Gibraltar
+ 1.616511935 | Greece
+ 19.42158975 | Greenland
+ 9.413802517 | Grenada
+ 1.881597351 | Guam
+ 40.73703968 | Guatemala
+ 18.68086412 | Guyana
+ 6.804486499 | Haiti
+ 74.97474892 | Honduras
+ 0.502417057 | Hong Kong SAR, China
+ 1.390094869 | Hungary
+ 0.624332744 | Iceland
+  3.76413425 | India
+  0.43748977 | Indonesia
+ 9.047818173 | Iraq
+ 1.207641958 | Ireland
+ 2.041803615 | Israel
+ 0.891694785 | Italy
+ 51.48616029 | Jamaica
+ 0.361748485 | Japan
+ 1.597457069 | Jordan
+ 8.534190879 | Kazakhstan
+  4.58236654 | Kenya
+ 3.886136209 | Kiribati
+ 0.978157179 | Korea, Rep.
+ 5.969544062 | Kosovo
+ 2.005425344 | Kuwait
+ 16.76410998 | Kyrgyz Republic
+ 3.303671087 | Latvia
+ 3.290892264 | Lebanon
+ 38.28470491 | Lesotho
+ 3.315038944 | Liberia
+ 2.778086454 | Liechtenstein
+ 7.010635999 | Lithuania
+  1.96893028 | Luxembourg
+ 0.371598711 | Macao SAR, China
+ 3.576437303 | Malawi
+ 1.914348639 | Malaysia
+ 1.640554507 | Maldives
+ 0.965584166 | Malta
+ 2.644330355 | Mauritius
+ 22.57545056 | Mexico
+   6.4854176 | Moldova
+           0 | Monaco
+ 8.787081299 | Mongolia
+ 2.402771838 | Montenegro
+ 1.394411914 | Morocco
+ 3.718409403 | Mozambique
+ 1.582978081 | Myanmar
+ 14.81917072 | Namibia
+ 3.009638952 | Nepal
+ 0.863157886 | Netherlands
+ 0.983968184 | New Zealand
+ 13.47857456 | Nicaragua
+ 2.076555352 | North Macedonia
+ 0.593547362 | Norway
+ 1.578202395 | Oman
+ 7.351275599 | Pakistan
+ 12.62802692 | Panama
+ 9.753078854 | Papua New Guinea
+ 11.85976287 | Paraguay
+ 9.200059459 | Philippines
+ 1.001831891 | Poland
+ 1.170246851 | Portugal
+ 28.77221956 | Puerto Rico
+ 0.215479045 | Qatar
+ 1.299344564 | Romania
+ 11.63234219 | Russian Federation
+ 2.898597497 | Rwanda
+ 8.604741212 | Samoa
+           0 | San Marino
+ 3.326458652 | Sao Tome and Principe
+ 1.445848846 | Serbia
+ 9.860528305 | Seychelles
+ 2.540667831 | Sierra Leone
+ 0.370285919 | Singapore
+ 1.517312255 | Slovak Republic
+ 0.734093659 | Slovenia
+        30.8 | South Africa
+ 0.854445688 | Spain
+  3.76571842 | Sri Lanka
+ 42.84752403 | St. Kitts and Nevis
+ 25.27399306 | St. Lucia
+ 23.09255496 | St. Vincent and the Grenadines
+ 0.969099878 | Sweden
+ 0.665926123 | Switzerland
+ 2.167345167 | Syrian Arab Republic
+ 2.404549674 | Tajikistan
+ 8.767314657 | Tanzania
+ 5.437902016 | Thailand
+ 3.566474047 | Timor-Leste
+ 0.961714159 | Tonga
+ 35.61360816 | Trinidad and Tobago
+ 2.689171712 | Tunisia
+ 4.236316091 | Turkey
+ 9.504799924 | Tuvalu
+ 9.744615822 | Uganda
+ 4.341361518 | Ukraine
+ 0.783625914 | United Arab Emirates
+ 1.191305343 | United Kingdom
+ 4.764224463 | United States
+ 6.102510871 | Uruguay
+ 45.99165498 | Venezuela, RB
+ 1.518740041 | Vietnam
+  52.7873612 | Virgin Islands (U.S.)
+ 0.789026223 | West Bank and Gaza
+  4.74630503 | Yemen, Rep.
+ 5.982660867 | Zambia
+ 5.599426921 | Zimbabwe
+(166 rows)
+
+
+    value    |            country
+-------------+--------------------------------
+  0.28998763 | Afghanistan
+ 1.578573584 | Albania
+ 3.312560602 | Algeria
+ 6.122594702 | Andorra
+ 1.244091538 | Angola
+ 5.956979597 | Antigua and Barbuda
+ 4.606804136 | Argentina
+ 1.463068919 | Armenia
+ 24.67052887 | Aruba
+ 17.74084505 | Australia
+ 8.078585585 | Austria
+ 3.388225879 | Azerbaijan
+ 6.725653769 | Bahamas, The
+ 23.58551891 | Bahrain
+ 0.408083791 | Bangladesh
+ 5.237995825 | Barbados
+  6.64269666 | Belarus
+ 10.11963524 | Belgium
+ 1.671656371 | Belize
+ 0.553283259 | Benin
+ 9.347122413 | Bermuda
+ 0.711464428 | Bhutan
+ 1.511526891 | Bolivia
+ 5.741760834 | Bosnia and Herzegovina
+ 2.299366163 | Botswana
+ 2.144736395 | Brazil
+ 7.124487299 | British Virgin Islands
+ 21.10681443 | Brunei Darussalam
+ 5.964900206 | Bulgaria
+ 0.134881687 | Burkina Faso
+ 0.035505087 | Burundi
+ 1.131390388 | Cabo Verde
+ 0.358188238 | Cambodia
+  0.33332691 | Cameroon
+  15.5055134 | Canada
+ 9.835262564 | Cayman Islands
+ 0.060186452 | Central African Republic
+ 0.083451527 | Chad
+ 4.234476106 | Chile
+ 6.560520007 | China
+ 1.703569292 | Colombia
+ 0.233942107 | Comoros
+ 0.031294864 | Congo, Dem. Rep.
+ 0.461621473 | Congo, Rep.
+ 1.653498575 | Costa Rica
+ 0.339322893 | Cote d'Ivoire
+ 4.696195978 | Croatia
+ 3.038892886 | Cuba
+  6.92787243 | Cyprus
+ 10.76390766 | Czech Republic
+ 8.258492419 | Denmark
+ 0.615387087 | Djibouti
+ 2.431628996 | Dominica
+ 2.168401096 | Dominican Republic
+ 2.428931904 | Ecuador
+ 2.449400701 | Egypt, Arab Rep.
+ 1.044262214 | El Salvador
+ 7.305717547 | Equatorial Guinea
+ 13.35457519 | Estonia
+ 0.995234951 | Eswatini
+ 0.074478123 | Ethiopia
+ 13.19119923 | Faroe Islands
+ 1.420197065 | Fiji
+ 11.54656566 | Finland
+ 5.428980862 | France
+ 3.013916046 | French Polynesia
+ 2.955473666 | Gabon
+ 0.241304353 | Gambia, The
+ 1.667568685 | Georgia
+ 9.267661332 | Germany
+ 0.401777969 | Ghana
+ 13.86657734 | Gibraltar
+ 7.540183868 | Greece
+ 11.66377295 | Greenland
+ 2.450810953 | Grenada
+ 0.799505838 | Guatemala
+ 0.255447904 | Guinea
+ 0.156544829 | Guinea-Bissau
+  2.29482304 | Guyana
+  0.21376934 | Haiti
+  0.97434316 | Honduras
+ 5.732656673 | Hong Kong SAR, China
+ 5.022311649 | Hungary
+ 6.168528586 | Iceland
+ 1.393273291 | India
+ 1.772951392 | Indonesia
+ 7.768594359 | Iran, Islamic Rep.
+ 3.772295829 | Iraq
+ 8.784418074 | Ireland
+ 9.035223254 | Israel
+  6.83837457 | Italy
+ 2.548213104 | Jamaica
+ 9.156018256 | Japan
+ 2.916818597 | Jordan
+ 15.22798733 | Kazakhstan
+  0.28965606 | Kenya
+ 0.570035073 | Kiribati
+ 2.068405565 | Korea, Dem. PeopleÆs Rep.
+ 11.43631663 | Korea, Rep.
+ 4.745655749 | Kosovo
+ 29.95609021 | Kuwait
+ 1.171873015 | Kyrgyz Republic
+ 0.502886226 | Lao PDR
+ 3.849593455 | Latvia
+ 4.047494872 | Lebanon
+ 1.141124815 | Lesotho
+ 0.197892457 | Liberia
+ 9.997526326 | Libya
+ 1.630049453 | Liechtenstein
+ 4.348616303 | Lithuania
+  21.6351358 | Luxembourg
+  2.29605235 | Macao SAR, China
+  0.09257807 | Madagascar
+ 0.072131361 | Malawi
+ 7.781705461 | Malaysia
+ 2.556735223 | Maldives
+ 0.131335414 | Mali
+ 6.174949579 | Malta
+ 2.407107121 | Marshall Islands
+ 0.640167478 | Mauritania
+ 3.132082534 | Mauritius
+ 4.069560416 | Mexico
+ 0.997716473 | Micronesia, Fed. Sts.
+ 1.723619573 | Moldova
+ 5.081415981 | Mongolia
+ 3.913105317 | Montenegro
+ 1.730134712 | Morocco
+ 0.116251552 | Mozambique
+ 0.260019433 | Myanmar
+ 1.464118206 | Namibia
+   4.3982009 | Nauru
+ 0.187197028 | Nepal
+  11.1556698 | Netherlands
+  14.3302983 | New Caledonia
+ 7.298263038 | New Zealand
+ 0.778851026 | Nicaragua
+ 0.071272972 | Niger
+  0.72017502 | Nigeria
+ 4.154446162 | North Macedonia
+ 10.10866816 | Norway
+ 15.59066447 | Oman
+ 0.944500917 | Pakistan
+ 11.64126984 | Palau
+ 2.535812986 | Panama
+ 0.651587229 | Papua New Guinea
+ 0.815799245 | Paraguay
+ 2.000399515 | Peru
+ 0.903376523 | Philippines
+ 8.313376825 | Poland
+ 4.552752646 | Portugal
+ 39.05970823 | Qatar
+ 3.922213561 | Romania
+ 11.69434657 | Russian Federation
+ 0.058807364 | Rwanda
+  1.00574351 | Samoa
+ 0.548918618 | Sao Tome and Principe
+ 18.90824847 | Saudi Arabia
+ 0.610870294 | Senegal
+ 6.273911614 | Serbia
+ 4.942709146 | Seychelles
+ 0.113171356 | Sierra Leone
+ 11.48769878 | Singapore
+ 6.721959562 | Slovak Republic
+ 7.485854369 | Slovenia
+ 0.354292134 | Solomon Islands
+ 0.050846475 | Somalia
+  9.17305524 | South Africa
+ 5.816416366 | Spain
+ 0.654610165 | Sri Lanka
+ 4.488738371 | St. Kitts and Nevis
+ 2.317086481 | St. Lucia
+ 2.032423445 | St. Vincent and the Grenadines
+ 0.345245386 | Sudan
+ 4.539301232 | Suriname
+ 5.547348052 | Sweden
+ 5.002174211 | Switzerland
+ 2.883815863 | Syrian Arab Republic
+ 0.337110559 | Tajikistan
+ 0.160252602 | Tanzania
+ 3.852981518 | Thailand
+ 0.214616428 | Timor-Leste
+ 0.410573777 | Togo
+   1.1284596 | Tonga
+ 36.08889453 | Trinidad and Tobago
+ 2.600803611 | Tunisia
+ 4.096888453 | Turkey
+ 11.26147873 | Turkmenistan
+ 5.613900796 | Turks and Caicos Islands
+  0.69648623 | Tuvalu
+ 0.120883274 | Uganda
+ 6.641343749 | Ukraine
+ 18.55247271 | United Arab Emirates
+  7.84936515 | United Kingdom
+  17.4431109 | United States
+ 1.901575191 | Uruguay
+ 3.647048882 | Uzbekistan
+ 0.512300443 | Vanuatu
+ 6.693449564 | Venezuela, RB
+ 1.622618922 | Vietnam
+ 0.537532609 | West Bank and Gaza
+  1.01197481 | Yemen, Rep.
+ 0.197823105 | Zambia
+ 0.614549238 | Zimbabwe
+(203 rows)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:37: ERROR:  relation "above_avg_tax_revenue" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:44: ERROR:  relation "below_avg_tax_revenue" already exists
+   gini_high_tax   |   gini_low_tax
+-------------------+-------------------
+ 33.50645161290332 | 37.81749999999995
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:56: ERROR:  relation "top_twenty_tax" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:64: ERROR:  relation "bottom_twenty_tax" already exists
+   gini_top_tax    |  gini_bottom_tax
+-------------------+-------------------
+ 37.57499999999998 | 35.76000000000008
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:77: ERROR:  relation "above_avg_gov_debt" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:84: ERROR:  relation "below_avg_gov_debt" already exists
+   gini_high_debt   |   gini_low_debt
+--------------------+-------------------
+ 36.149999999999935 | 36.15625000000002
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:96: ERROR:  relation "top_twenty_debt" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:104: ERROR:  relation "bottom_twenty_debt" already exists
+   gini_top_debt   | gini_bottom_debt
+-------------------+-------------------
+ 35.48000000000004 | 36.08500000000004
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:117: ERROR:  relation "above_avg_gov_spending" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:124: ERROR:  relation "below_avg_gov_spending" already exists
+ gini_high_spending | gini_low_spending
+--------------------+-------------------
+ 33.132499999999844 | 40.06250000000022
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:136: ERROR:  relation "top_twenty_spending" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:144: ERROR:  relation "bottom_twenty_spending" already exists
+ gini_top_spending | gini_bottom_spending
+-------------------+----------------------
+ 37.94000000000005 |     36.5950000000001
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:163: ERROR:  relation "above_avg_unemployment" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:170: ERROR:  relation "below_avg_unemployment" already exists
+ gini_high_unemployment | gini_low_unemployment
+------------------------+-----------------------
+      36.80769230769225 |     35.93829787234055
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:182: ERROR:  relation "top_twenty_unemployment" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:190: ERROR:  relation "bottom_twenty_unemployment" already exists
+ gini_top_unemployment | gini_bottom_unemployment
+-----------------------+--------------------------
+    37.369999999999976 |       36.765000000000086
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:203: ERROR:  relation "above_avg_gdp" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:210: ERROR:  relation "below_avg_gdp" already exists
+   gini_high_gdp   |   gini_low_gdp
+-------------------+-------------------
+ 35.63076923076907 | 36.92105263157917
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:222: ERROR:  relation "top_twenty_gdp" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:230: ERROR:  relation "bottom_twenty_gdp" already exists
+   gini_top_gdp    | gini_bottom_gdp
+-------------------+------------------
+ 37.68500000000001 | 36.5950000000001
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:246: ERROR:  relation "above_avg_education" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:253: ERROR:  relation "below_avg_education" already exists
+ gini_high_education | gini_low_education
+---------------------+--------------------
+   33.71071428571432 |  41.62999999999999
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:265: ERROR:  relation "top_twenty_education" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:273: ERROR:  relation "bottom_twenty_education" already exists
+ gini_top_education | gini_bottom_education
+--------------------+-----------------------
+ 37.429999999999986 |     37.90500000000011
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:286: ERROR:  relation "above_avg_homicide" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:293: ERROR:  relation "below_avg_homicide" already exists
+ gini_high_homicide |  gini_low_homicde
+--------------------+--------------------
+  45.23333333333308 | 33.861290322580615
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:305: ERROR:  relation "top_twenty_homicide" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:313: ERROR:  relation "bottom_twenty_homicide" already exists
+ gini_top_homicide | gini_bottom_homicide
+-------------------+----------------------
+ 37.78000000000003 |     36.5950000000001
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:326: ERROR:  relation "above_avg_co2" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:333: ERROR:  relation "below_avg_co2" already exists
+   gini_high_co2   |    gini_low_co2
+-------------------+--------------------
+ 32.41794871794849 | 40.150000000000325
+(1 row)
+
+
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:345: ERROR:  relation "top_twenty_co2" already exists
+psql:C:/Users/igorl/OneDrive/Desktop/project/queries.sql:353: ERROR:  relation "bottom_twenty_co2" already exists
+   gini_top_co2    | gini_bottom_co2
+-------------------+------------------
+ 37.68500000000001 | 36.5950000000001
+(1 row)
